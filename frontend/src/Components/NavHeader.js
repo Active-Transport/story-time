@@ -23,7 +23,6 @@ function NavHeader() {
     }, []);
 
     window.addEventListener("resize", showButton);
-    console.log(button)
 
     return (
         <>
@@ -38,9 +37,11 @@ function NavHeader() {
                     <div className="navigation-img">
                         <img src="" alt="Logo" />
                     </div>
+                    <div className="navigation-title">
+                        <h1>STORY TIME!</h1>
+                    </div>
                     <div className="navigation-right-column">
                         <div className="navigation-links">
-                            {/* Include Button component here if 'button' state is true */}
                             {button && <Button />}
                         </div>
                         <div
