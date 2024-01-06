@@ -23,6 +23,7 @@ function NavHeader() {
     }, []);
 
     window.addEventListener("resize", showButton);
+    console.log(button)
 
     return (
         <>
@@ -35,10 +36,13 @@ function NavHeader() {
                     }
                 >
                     <div className="navigation-img">
-                        <img src=""></img>
+                        <img src="" alt="Logo" />
                     </div>
                     <div className="navigation-right-column">
-                        <div className="navigation-links"></div>
+                        <div className="navigation-links">
+                            {/* Include Button component here if 'button' state is true */}
+                            {button && <Button />}
+                        </div>
                         <div
                             onClick={handleClick}
                             className={click ? "navigation-close" : "navigation-menu"}
@@ -77,8 +81,6 @@ function NavHeader() {
                     </div>
                 </div>
             </nav>
-
-
         </>
     );
 }

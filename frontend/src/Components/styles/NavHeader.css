@@ -1,8 +1,12 @@
+* {
+    box-sizing: content-box;
+}
+
 .navigation-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 10px;
     position: fixed;
     border-bottom: 2px solid #000000;
     top: 0;
@@ -21,13 +25,13 @@
 }
 
 .navigation-menu {
-    background-image: url("");
+    background-image: url("../../../public/icons/menu_icon.svg");
     width: 48px;
     height: 48px;
 }
 
 .navigation-close {
-    background-image: url("");
+    background-image: url("../../../public/icons/close_icon.svg");
     width: 48px;
     height: 48px;
 }
