@@ -107,10 +107,24 @@ export default function Toneteller() {
             </div>
 
             {clickedCharacter && (
-                <div>
+                <div className="toneteller-input-div">
+                    <input id="inputField" type="text" onChange={() => { setPrint(false) }} onKeyUp={
+                        (e) => {
+                            console.log(e.key)
+                            if (e.key === 'Enter') {
+                                fetchData()
+                            }
+                        }
+                    } />
+                    <button
+                        className="secondary-button heading-5"
+                        onClick={() => fetchData()}
+                    />
 
                     <div className="storytime-input-div">
-                        <input
+                        
+                        <textarea 
+                            className="storytime-input"
                             id={`inputField_${clickedCharacter}`}
                             type="text"
                             onChange={() => setPrint(false)}
@@ -120,12 +134,18 @@ export default function Toneteller() {
                                 }
                             }}
                         />
-                        <button
-                            className="secondary-button heading-5 "
-                            onClick={() => fetchData()}
-                        >
-                            Tell the story
-                        </button>
+
+                        <div className="button-container">
+                            <img src="/icons/Logo.jpg" alt="https://placehold.co/400" />
+                            <button
+                                className="secondary-button heading-5 "
+                                onClick={() => fetchData()}
+                            >
+                                Tell the story
+                            </button>
+                        
+                        
+                        </div>
                     </div>
                 </div>
 

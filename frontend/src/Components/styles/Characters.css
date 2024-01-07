@@ -15,21 +15,17 @@
 
 .toneteller-input-div {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
+    gap: 10px;
 }
 
 .toneteller-input-div>input {
     padding: 12px;
-    width: 50%;
-    min-height: 100px;
-    border: 2px solid var(--melon);
+    width: 100%;
+    border: 2px solid #000;
     border-radius: 4px;
-    font-family: Epilogue;
+    font-family: 'Cantarell';
     font-size: 1rem;
     line-height: 1.25rem;
-    border-radius: 30px;
 }
 
 .toneteller-text,
@@ -43,7 +39,7 @@
 
 .enter-prompt-div {
     background-color: var(--yellow-100);
-    border-top: 2px solid var(--light-orange);
+    border-top: 2px solid var(--black);
 }
 
 .enter-prompt-input-text {
@@ -51,6 +47,7 @@
 }
 
 .characters-grid {
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -77,7 +74,8 @@
 }
 
 .characters-img>img {
-    width: 100%;
+    width: 160px;
+    height: 160px;
 }
 
 .storytime-input-div {
@@ -90,8 +88,8 @@
 }
 
 .storytime-input {
-    height: 100%;
-    width: 60%;
+        width: auto;
+        height: 100%;
         box-sizing: border-box;
         padding: 12px 20px;
         border: 2px solid #ccc;
@@ -111,6 +109,6 @@
 }
 
 .button-container > img {
-    height: 100%;
+    height: 100px;
     width: 130px;
 }
