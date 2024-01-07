@@ -28,7 +28,7 @@ def receive_input():
         # Check if paragraphs are successfully retrieved
         
         if isinstance(paragraphs, list) and len(paragraphs) >= 3:
-            text_to_speech(paragraphs[0], "audio1.mp3")
+            text_to_speech(paragraphs[0], "../frontend/src/Components/audio1.mp3")
             text_to_speech(paragraphs[1], "audio2.mp3")
             text_to_speech(paragraphs[2], "audio3.mp3")
             return jsonify({
@@ -102,7 +102,7 @@ def text_to_speech(paragraphs, filename):
 
 
 
-@app.route('/image', methods=['GET'])
+# @app.route('/image', methods=['GET'])
 def image_gen():
     # generate image
     # get the input from the Body of the request
@@ -110,7 +110,7 @@ def image_gen():
 
     engine_id = "stable-diffusion-v1-6"
     api_host = os.getenv('API_HOST', 'https://api.stability.ai')
-    api_key = os.getenv("STABILITY_API_KEY")
+    api_key = "sk-xfdigb1KTQ46bzNIZ4olmFNehQV6Pnny1E5lVmHp5h42BveT"
 
     if api_key is None:
         raise Exception("Missing Stability API key.")
@@ -141,11 +141,7 @@ def image_gen():
 
     data = response.json()
 
-    for i, image in enumerate(data["artifacts"]):
-        with open(f"./out/v1_txt2img_{i}.png", "wb") as f:
-            f.write(base64.b64decode(image["base64"]))
-
-
+    # save the image to a file
 
 if __name__ == "__main__":
     app.run(debug=True)
