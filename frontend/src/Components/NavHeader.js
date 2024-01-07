@@ -56,7 +56,7 @@ function NavHeader() {
                         <a
                             className="heading-4"
                             target="_blank"
-                            href=""
+                            href="https://devpost.com/software/story-time-0c51ub"
                         >
                             Devpost
                         </a>
