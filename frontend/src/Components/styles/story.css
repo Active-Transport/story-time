@@ -19,11 +19,7 @@
     height: 100px;
     width: 700px;
     background-color: #FFFAEE;
-<<<<<<< HEAD
-    border-radius: 0.5rem;
-    color: #F08080;
-=======
->>>>>>> 6978532bd25cbda1c1d023e299e0f22bbcd44895
+    color: var(--light-coral);
 
 }
 
