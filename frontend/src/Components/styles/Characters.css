@@ -72,14 +72,17 @@
     margin: auto;
 }
 
+.characters-img:hover {
+    cursor: pointer;
+    transition: 0.25s;
+    scale: 1.1;
+}
+
 .characters-img {
+    transition: 0.25s;
     border-radius: 20px;
     width: 160px;
     height: 160px;
-    aspect-ratio: 1 / 1;
-    margin-bottom: 20px;
-    padding: 5px;
-    margin-left: 30px;
 }
 
 .characters-img>img {
