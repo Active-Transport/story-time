@@ -110,7 +110,7 @@ const Story = () => {
                                 <source src="/sound/audio1.mp3"></source>
                             </audio>
                         </div>
-                        <img src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
+                        <img src="/image/image1.jpg" alt="https://placehold.co/400" />
                         <p>{fakeStory[0]}</p>
                         <p>{storyData.paragraph1}</p>
     
@@ -122,7 +122,7 @@ const Story = () => {
                                 <source src="/sound/audio2.mp3"></source>
                             </audio>
                         </div>
-                        <img src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
+                        <img src="/image/image2.jpg" alt="https://placehold.co/400" />
                         <p>{fakeStory[1]}</p>
                         <p>{storyData.paragraph2}</p>
     
@@ -134,7 +134,7 @@ const Story = () => {
                                 <source src="/sound/audio3.mp3"></source>
                             </audio>
                         </div>
-                        <img src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
+                        <img src="/image/image3.jpg" alt="https://placehold.co/400" />
                         <p>{fakeStory[2]}</p>
                         <p>{storyData.paragraph3}</p>
                     </div>
