@@ -24,8 +24,13 @@ const Story = () => {
         console.log(data);
     };
 
+    const fakeStory = ["In the Arctic's frozen expanse lived a young polar bear named Blizzard, known for his snowy fur and bright eyes. Blizzard loved exploring the icy landscape, marveling at the northern lights, and playing amidst the icebergs. His adventurous spirit was matched only by his curiosity about the world around him.",
 
+    "One day, Blizzard noticed the ice melting unusually fast, threatening his home. Determined to find a solution, he embarked on a journey across the Arctic. Meeting various animals, Blizzard learned about the ecosystem, the impact of climate change, and the importance of his home. These encounters filled him with resolve and ideas to make a difference.",
+    
+    "Blizzard returned, ready to act. He united the polar bears and other Arctic animals, sharing his newfound knowledge. Together, they worked on conservation efforts, assisting scientists and spreading awareness. Blizzard's story of bravery and cooperation inspired many, turning him into a symbol of hope and a reminder that even small steps can lead to significant change."]
 
+    
     
     // AUDIO GENERATION 
     // const handAudioClick = async (event) => {
@@ -105,7 +110,8 @@ const Story = () => {
                                 <source src="/sound/audio1.mp3"></source>
                             </audio>
                         </div>
-                        <img src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
+                        <img src="/image/image1.jpg" alt="https://placehold.co/400" />
+                        <p>{fakeStory[0]}</p>
                         <p>{storyData.paragraph1}</p>
     
                     </div>
@@ -116,7 +122,8 @@ const Story = () => {
                                 <source src="/sound/audio2.mp3"></source>
                             </audio>
                         </div>
-                        <img src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
+                        <img src="/image/image2.jpg" alt="https://placehold.co/400" />
+                        <p>{fakeStory[1]}</p>
                         <p>{storyData.paragraph2}</p>
     
                     </div>
@@ -127,9 +134,9 @@ const Story = () => {
                                 <source src="/sound/audio3.mp3"></source>
                             </audio>
                         </div>
-                        <img src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
+                        <img src="/image/image3.jpg" alt="https://placehold.co/400" />
+                        <p>{fakeStory[2]}</p>
                         <p>{storyData.paragraph3}</p>
-    
                     </div>
                 </div>
             )}
