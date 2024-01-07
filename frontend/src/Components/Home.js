@@ -6,7 +6,6 @@ export default function Home() {
     return (
         <div>
             <LandingContent></LandingContent>
-            <Story/>
         </div>
     );
 }
