@@ -13,7 +13,7 @@ PADDING
     margin-left: auto;
     margin-right: auto;
     width: 100vw;
-    background-color: var(--light-coral);
+    background-color: #F8AD9D;
 
 }
 
@@ -27,7 +27,7 @@ PADDING
 
 .storytime-text {
     text-align: left;
-    background-color: var(--light-coral);
+    background-color: #FFFAEE;
     padding: 20px;
     padding-bottom: 40px;
     height: 550px;
@@ -39,7 +39,7 @@ PADDING
     flex-direction: column;
     justify-content: flex-start;
     /* Align content to the top */
-    color: #FFFFFF;
+    color: #000000;
 }
 .storytime-text > p {
     margin: auto;
@@ -47,11 +47,11 @@ PADDING
 }
 
 .storytime-button {
-    background-color: var(--light-coral);
+    background-color: #F8AD9D;
     padding-top: 70px;
     justify-content: flex-end;
     flex-direction: column;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .new-tale-button { 
