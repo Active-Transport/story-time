@@ -110,9 +110,7 @@ export default function Toneteller() {
                 <div>
 
                     <div className="storytime-input-div">
-                        
-                        <textarea 
-                            className="storytime-input"
+                        <input
                             id={`inputField_${clickedCharacter}`}
                             type="text"
                             onChange={() => setPrint(false)}
@@ -122,20 +120,15 @@ export default function Toneteller() {
                                 }
                             }}
                         />
-
-                        <div className="button-container">
-                            <img src="/icons/Logo.jpg" alt="https://placehold.co/400" />
-                            <button
-                                className="secondary-button heading-5 "
-                                onClick={() => fetchData()}
-                            >
-                                Tell the story
-                            </button>
-                        
-                        
-                        </div>
+                        <button
+                            className="secondary-button heading-5 "
+                            onClick={() => fetchData()}
+                        >
+                            Tell the story
+                        </button>
                     </div>
                 </div>
+
             )}
         </div>
     );

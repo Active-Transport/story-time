@@ -15,17 +15,21 @@
 
 .toneteller-input-div {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
 }
 
 .toneteller-input-div>input {
     padding: 12px;
-    width: 100%;
-    border: 2px solid #000;
+    width: 50%;
+    min-height: 100px;
+    border: 2px solid var(--melon);
     border-radius: 4px;
-    font-family: 'Cantarell';
+    font-family: Epilogue;
     font-size: 1rem;
     line-height: 1.25rem;
+    border-radius: 30px;
 }
 
 .toneteller-text,
@@ -39,7 +43,7 @@
 
 .enter-prompt-div {
     background-color: var(--yellow-100);
-    border-top: 2px solid var(--black);
+    border-top: 2px solid var(--light-orange);
 }
 
 .enter-prompt-input-text {

@@ -176,10 +176,11 @@ p {
 
 .secondary-button {
   padding: 12px 20px;
-  background-color: var(--light-coral);
+  background-color: var(--melon);
   color: var(#000000);
   border: none;
   border-radius: 20px;
+  margin-left: 10px;
 
 }
 
