@@ -107,27 +107,24 @@ export default function Toneteller() {
             </div>
 
             {clickedCharacter && (
-                <div>
+                <div className="toneteller-input-div">
+                    <input id="inputField" type="text" onChange={() => { setPrint(false) }} onKeyUp={
+                        (e) => {
+                            console.log(e.key)
+                            if (e.key === 'Enter') {
+                                fetchData()
+                            }
+                        }
+                    } />
+                    <button
+                        className="secondary-button heading-5"
+                        onClick={() => fetchData()}
 
-                    <div className="storytime-input-div">
-                        <input
-                            id={`inputField_${clickedCharacter}`}
-                            type="text"
-                            onChange={() => setPrint(false)}
-                            onKeyUp={(e) => {
-                                if (e.key === 'Enter') {
-                                    fetchData();
-                                }
-                            }}
-                        />
-                        <button
-                            className="secondary-button heading-5 "
-                            onClick={() => fetchData()}
-                        >
-                            Tell the story
-                        </button>
-                    </div>
+                    >
+                        Tell the story
+                    </button>
                 </div>
+
             )}
         </div>
     );
