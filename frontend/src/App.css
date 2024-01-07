@@ -27,6 +27,7 @@
   --yellow-200: #fcf0d4;
   --yellow-100: #fdf5e2;
   --yellow-50: #fefaf1;
+  --baby-yellow: #FFFAEE;
 }
 
 @font-face {
@@ -78,10 +79,12 @@ p {
 }
 
 .heading-3 {
-  font-family: Abyss;
-  font-size: 3rem;
+  font-family: "Epilogue";
+  font-size: 2rem;
   /* 48px */
   line-height: 1;
+  font-weight: 700;
+  color: var(--coral-pink);
 }
 
 .heading-4 {
@@ -121,9 +124,12 @@ p {
 }
 
 .body-text {
-  font-family: 'Cantarell';
-  font-size: 1.125rem;
+  font-family: 'Epilogue';
+  font-size: 1.25rem;
   line-height: 1.5rem;
+  color: var(--light-coral);
+  font-weight: 500;
+  font-style: italic;
 }
 
 .body-title {

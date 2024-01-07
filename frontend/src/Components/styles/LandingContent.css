@@ -7,13 +7,10 @@ PADDING
     background-color: var(--light-coral);
     padding: 20px;
     padding-bottom: 40px;
-    /* Adjust the padding-bottom to create space */
     height: calc(100vh - 40px);
-    /* Adjust the total height minus padding */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* Align content to the top */
     color: #FFFFFF;
 }
 
