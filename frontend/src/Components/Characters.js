@@ -76,7 +76,7 @@ export default function Storytime() {
                 </button>
             </div>
 
-
+            {console.log(clickedCharacter)};
             {clickedCharacter && (
                 <div className="toneteller-input-div">
                     <input id="inputField" type="text" onChange={() => { setPrint(false) }} onKeyUp={
