@@ -1,4 +1,4 @@
 # story-time
 
-cute storytelling app
+## cute storytelling app
 HackEd 2024
