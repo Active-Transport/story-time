@@ -133,18 +133,17 @@ p {
 }
 
 .body-title {
-  font-family: 'Cantarell';
-  font-size: 1rem;
+  font-family: 'Epilogue';
+  font-size: 0.75rem;
   line-height: 1.125rem;
-  font-weight: 700;
+  font-weight: 500;
+  color: var(#ffffff)
 }
 
 .caption-text {
-  font-family: 'Cantarell';
-  font-size: 0.875rem;
-  /* 14px */
+  font-family: 'Epilogue';
+  font-size: 0.65rem;
   line-height: 1.25rem;
-  /* 20px */
 }
 
 .overline-text {
