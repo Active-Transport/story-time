@@ -35,7 +35,9 @@ function NavHeader() {
                     }
                 >
                     <div className="navigation-title" >
-                        <h1>STORY TIME!</h1>
+                        <Link to="/" className="heading-4">
+                            <h1>STORY TIME!</h1>
+                            </Link>
                     </div>
                     <div className="navigation-right-column">
                     
