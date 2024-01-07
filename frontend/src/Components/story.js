@@ -44,20 +44,20 @@ const Story = () => {
     // };
     
     const handleAudioOne = () => {
-        const audio = new Audio("/sound/audio1.mp3")
-        audio.play();
+        const targetAudio = document.getElementsByClassName("audioBtn1")[0];
+        targetAudio.play();
     };
      
     const handleAudioTwo = () => {
-        const audio = new Audio("/frontend/audio1.mp3");
-        audio.play();
-    }
+        const targetAudio = document.getElementsByClassName("audioBtn2")[0];
+        targetAudio.play();
+    };
     
      
     const handleAudioThree = () => {
-        const audio = new Audio("/backend/audio1.mp3");
-        audio.play();
-    }
+        const targetAudio = document.getElementsByClassName("audioBtn3")[0];
+        targetAudio.play();
+    };
 
     const audioClip = { sound: "http://soundbible.com/mp3/Upper Cut-SoundBible.com-1272257235.mp3", label: "upper cut" };
     const playSound = (src) => {
@@ -93,10 +93,7 @@ const Story = () => {
                     type="submit">Generate Story</button>
                 </form>
             </div>
-            <button className="btn btn-danger" onClick={initAudio}>Play Audio</button>
-            <audio className="audioBtn1">
-                <source src="/sound/audio1.mp3"></source>
-            </audio>
+            
 
             <div>
             {storyData && (
@@ -106,8 +103,10 @@ const Story = () => {
 
                     <div className="story-part">
                         <div className="audio-div">
-                            <h2>Listen along to the story!</h2>
-                            <button onClick={() => handleAudioOne()}>Audio Button</button>
+                            <button className="btn btn-danger" onClick={handleAudioOne}>Play Audio</button>
+                            <audio className="audioBtn1">
+                                <source src="/sound/audio1.mp3"></source>
+                            </audio>
                         </div>
                         <img src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
                         <p>{storyData.paragraph1}</p>
@@ -115,8 +114,10 @@ const Story = () => {
                     </div>
                     <div className="story-part">
                         <div className="audio-div">
-                            <h2>Listen along to the story!</h2>
-                            <button onClick={() => handleAudioTwo()}>Audio Button</button>
+                            <button className="btn btn-danger" onClick={handleAudioTwo}>Play Audio</button>
+                            <audio className="audioBtn2">
+                                <source src="/sound/audio2.mp3"></source>
+                            </audio>
                         </div>
                         <img src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
                         <p>{storyData.paragraph2}</p>
@@ -124,8 +125,10 @@ const Story = () => {
                     </div>
                     <div className="story-part">
                         <div className="audio-div">
-                            <h2>Listen along to the story!</h2>
-                            <button onClick={() => handleAudioThree()}>Audio Button</button>
+                            <button className="btn btn-danger" onClick={handleAudioThree}>Play Audio</button>
+                            <audio className="audioBtn3">
+                                <source src="/sound/audio3.mp3"></source>
+                            </audio>
                         </div>
                         <img src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
                         <p>{storyData.paragraph3}</p>

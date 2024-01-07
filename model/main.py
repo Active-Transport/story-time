@@ -49,11 +49,14 @@ def receive_input():
     
 
 def get_text_story(prompt):
-    try:# trin token2 = r8_do00zo3M6Hpm7jOO3HS5vpJygphadUj13Rwve
+    try: 
+        # trin token4 = r8_4DgjE8rGCyKBkQiQOHGqzMUzzZBxDBk2qWabJ    
+        # trin token3 = r8_4DgjE8rGCyKBkQiQOHGqzMUzzZBxDBk2qWabJ
+        # trin token2 = r8_do00zo3M6Hpm7jOO3HS5vpJygphadUj13Rwve
         # trin token = r8_Hpd3GignJPpBISMbcXRuMFn2jsT9LbQ4f6uUd
         #  aniket token = r8_bTl0E2JSNdbvBMNDuSRpzCQpV8OpVyc4VPBcr
         #  tyler token = r8_bCD43r2879YnQ8IWXGKaGIi9vJbypfG1IU9Af
-        os.environ["REPLICATE_API_TOKEN"] = "r8_Hpd3GignJPpBISMbcXRuMFn2jsT9LbQ4f6uUd"
+        os.environ["REPLICATE_API_TOKEN"] = "r8_NmfpmPSzL2q4VzMnxIKgWCDA0sRXGrm2u7RgR"
 
         pre_prompt = "Tell a a happy and positive story about"
 
