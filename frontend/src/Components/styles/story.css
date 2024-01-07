@@ -1,5 +1,5 @@
-.Story-container{
-    display:flex;
+.Story-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 4rem;
@@ -9,6 +9,7 @@
     background-color: #FFFAEE;
 
 }
+
 .audio-div {
     display: flex;
     flex-direction: row;
@@ -18,22 +19,25 @@
     height: 100px;
     width: 700px;
     background-color: #FFFAEE;
+<<<<<<< HEAD
     border-radius: 0.5rem;
     color: #F08080;
+=======
+>>>>>>> 6978532bd25cbda1c1d023e299e0f22bbcd44895
 
 }
 
 
 .Story-container button {
-    width: 200px;
-    height: 80px;
+    width: 100px;
+    height: 30px;
     justify-self: center;
     background-color: #F8AD9D;
-    border-radius: 0.5rem;
+    border-radius: 20px;
 }
 
 
-.story-part { 
+.story-part {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -46,10 +50,11 @@
     padding-top: 2rem;
 }
 
-.story-part img{
+.story-part img {
     width: 90%;
     height: 260px;
 }
 
 .story-part p {
-padding: 0rem 1rem 1rem 1rem}
+    padding: 0rem 1rem 1rem 1rem
+}

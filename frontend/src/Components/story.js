@@ -1,5 +1,5 @@
 import "./styles/story.css"
-import {Howl} from 'howler'
+import { Howl } from 'howler'
 import React, { useState, useEffect } from 'react';
 
 
@@ -38,17 +38,17 @@ const Story = () => {
         <div className="Story-container">
             <div className="audio-div">
                 <h2>Listen along to the story!</h2>
-                <button onClick={() => playSound(audioClip.sound)}>Audio Button</button>
+                <button className="secondary-button heading-5 " onClick={() => playSound(audioClip.sound)}>Audio Button</button>
             </div>
-        
-        {storyData.map((paragraph, index) => (
-            <div key={index} className="story-part">
-                <img src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
-                <p>{paragraph}</p>
-            </div>
-        ))}
 
-    </div> );
+            {storyData.map((paragraph, index) => (
+                <div key={index} className="story-part">
+                    <img src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
+                    <p>{paragraph}</p>
+                </div>
+            ))}
+
+        </div>);
 }
 
 
