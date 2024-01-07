@@ -2,6 +2,10 @@
     box-sizing: content-box;
 }
 
+
+.navigation-div {
+    background-color: #FBC4AB;
+}
 .navigation-content {
     display: flex;
     flex-direction: row;
@@ -54,10 +58,9 @@
 
 .navigation-mobile {
     color: black;
-    margin-top: calc(48px + 40px);
     position: fixed;
     height: calc(100vh - 48px - 40px);
-    background-color: var(--yellow-900);
+    background-color: lightgreen;
     width: 100vw;
     display: flex;
     flex-direction: column;
