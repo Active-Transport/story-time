@@ -15,7 +15,7 @@ export default function Storytime() {
         console.log("weee woo", document.getElementById(inputFieldId).value);
         setPrint(true);
 
-        fetch("https://tone-teller-ezen7qibyq-nn.a.run.app/tonetelling", {
+        fetch("", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             mode: "cors",
