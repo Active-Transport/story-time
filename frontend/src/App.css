@@ -34,6 +34,11 @@
   src: url(../public/fonts/GloriaHallelujah-Regular.ttf);
 }
 
+@font-face {
+  font-family: Epilogue;
+  src: url(../public/fonts/Epilogue-VariableFont_wght.ttf);
+}
+
 body {
   margin: 0;
 }
@@ -80,7 +85,7 @@ p {
 }
 
 .heading-4 {
-  font-family: Abyss;
+  font-family: "GloriaHallelujah";
   font-size: 2.25rem;
   /* 36px */
   line-height: 2.5rem;
@@ -88,7 +93,7 @@ p {
 }
 
 .heading-5 {
-  font-family: 'Cantarell';
+  font-family: 'GloriaHallelujah';
   font-weight: 700;
   margin-bottom: 20px;
   font-size: 1.5rem;
@@ -151,10 +156,10 @@ p {
 
 .primary-button {
   padding: 12px 20px;
-  background-color: var(--yellow-900);
-  border: 2px solid #000000;
-  box-shadow: 8px 8px 0px #000000;
-  border-radius: 10px;
+  background-color: var(--#ffffff);
+  color: var(--light-coral);
+  border: none;
+  border-radius: 20px;
 }
 
 

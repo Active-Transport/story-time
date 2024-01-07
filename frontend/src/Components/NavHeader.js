@@ -37,7 +37,7 @@ function NavHeader() {
                     <div className="navigation-img">
                         <img src="" alt="Logo" />
                     </div>
-                    <div className="navigation-title">
+                    <div className="navigation-title" >
                         <h1>STORY TIME!</h1>
                     </div>
                     <div className="navigation-right-column">

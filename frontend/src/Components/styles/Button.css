@@ -1,5 +1,6 @@
 :root {
     --primary: #fff;
+    --light-coral: #F08080;
 }
 
 .btn {
@@ -13,13 +14,14 @@
 
 .btn--primary {
     background-color: var(--primary);
-    color: #242424;
-    border: 1px solid var(--primary);
+    color: var(--light-coral);
+    border: none;
+    box-shadow: none;
 }
 
 .btn--outline {
     background-color: transparent;
-    color: #fff;
+    color: var(--primary);
     padding: 8px 20px;
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
@@ -38,7 +40,7 @@
 .btn--large:hover,
 .btn--medium:hover {
     transition: all 0.3s ease-out;
-    background: #fff;
+    background: var(--primary);
     color: #242424;
     transition: 250ms;
 }

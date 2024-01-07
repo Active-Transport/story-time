@@ -8,17 +8,22 @@
     justify-content: space-between;
     padding: 20px 10px;
     top: 0;
-    background-color: #F4978E;
+    background-color: var(--apricot);
     width: 100vw;
     z-index: 999;
+}
+
+.navigation-title {
+    text-align: left;
 }
 
 .navigation-title h1 {
     font-size: 3rem;
     color: #FFFFFF;
     margin: 0px;
-    align-items: start;
     justify-content: flex-start;
+    font-family: Epilogue;
+    text-align: left;
 }
 
 .background-yellow {
