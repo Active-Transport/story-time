@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-  --green: #2A9D8F;
+  --green: #6FCA67;
   --orange: #f4a261;
   --red: #e76f51;
-  --blue: #2673ab;
+  --blue: #68C7EA;
   --white: #ffffff;
   --black: #000000;
   --cyan: #22d3ee;
@@ -16,6 +16,7 @@
   --pink: #f472b6;
   --rose: #fb7185;
   --teal: #2dd4bf;
+  --gold: #FFD66E;
 
   --light-coral: #F08080;
   --coral-pink: #F4978E;
@@ -40,7 +41,7 @@
   src: url(../public/fonts/Epilogue-VariableFont_wght.ttf);
 }
 
-@font-face { 
+@font-face {
   font-family: Handjet;
   src: url(../public/fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf);
 }
@@ -234,6 +235,10 @@ p {
 
 .background-pink {
   background-color: var(--pink);
+}
+
+.background-gold {
+  background-color: var(--gold);
 }
 
 * {

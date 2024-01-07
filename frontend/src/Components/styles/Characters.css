@@ -4,11 +4,13 @@
     height: calc(100vh);
     justify-content: space-between;
     overflow: hidden;
-    padding-top: calc(48px + 40px + 20px);
+    background-color: var(--baby-yellow);
 }
 
-.toneteller-text>.body-title {
+.toneteller-text>.heading-3 {
     margin-bottom: 5px;
+    align-items: center;
+    flex-direction: column;
 }
 
 .toneteller-input-div {
@@ -42,4 +44,35 @@
 
 .enter-prompt-input-text {
     margin-bottom: 10px;
+}
+
+.characters-grid {
+    margin-bottom: 400px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+
+}
+
+.characters-column {
+    width: calc(20%);
+    flex-direction: row !important;
+    margin-left: auto;
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.characters-img {
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.characters-img>img {
+    width: 100%;
 }
