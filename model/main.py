@@ -31,6 +31,9 @@ def receive_input():
             text_to_speech(paragraphs[0], "../frontend/public/sound/audio1.mp3")
             text_to_speech(paragraphs[1], "../frontend/public/sound/audio2.mp3")
             text_to_speech(paragraphs[2], "../frontend/public/sound/audio3.mp3")
+            image_gen(paragraphs[0],"../frontend/public/image/image1.png")
+            image_gen(paragraphs[1],"../frontend/public/image/image2.png")
+            image_gen(paragraphs[2],"../frontend/public/image/image3.png")
             return jsonify({
                 "paragraph1": paragraphs[0],
                 "paragraph2": paragraphs[1],
@@ -103,11 +106,10 @@ def text_to_speech(paragraphs, filename):
 
 
 @app.route('/image', methods=['GET'])
-def image_gen():
+def image_gen(input_text,filename):
     # generate image
     # get the input from the Body of the request
-    inputText ="A tree in a forest"
-
+  
     engine_id = "stable-diffusion-v1-6"
     api_host = os.getenv('API_HOST', 'https://api.stability.ai')
     api_key = "sk-xfdigb1KTQ46bzNIZ4olmFNehQV6Pnny1E5lVmHp5h42BveT"
@@ -125,7 +127,7 @@ def image_gen():
         json={
             "text_prompts": [
                 {
-                    "text": "A lighthouse on a cliff"
+                    "text": input_text,
                 }
             ],
             "cfg_scale": 7,
@@ -144,11 +146,9 @@ def image_gen():
     # save the image file as png 
     
     for i, image in enumerate(data["artifacts"]):
-        with open(f"v1_txt2img_{i}.png", "wb") as f:
-            f.write(base64.b64decode(image["base64"]))
+        if i == 0:
+            with open(filename, "wb") as f:
+                f.write(base64.b64decode(image["base64"]))
 
-    # delete the image file after sending it
-    # return text "image generated"
-    return jsonify({"error": "Error generating story"})
 if __name__ == "__main__":
     app.run(debug=True)
