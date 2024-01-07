@@ -61,7 +61,7 @@
 .navigation-mobile {
     color: black;
     position: fixed;
-    background-color: lightgreen;
+    background-color: #F8AD9D;
     width: 100%;
     display: flex;
     flex-direction: column;
