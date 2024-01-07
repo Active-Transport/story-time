@@ -1,6 +1,6 @@
 import "./styles/story.css"
 import {Howl} from 'howler'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 
 const Story = () => {
@@ -44,7 +44,7 @@ const Story = () => {
     // };
     
     const handleAudioOne = () => {
-        const audio = new Audio("frontend/src/Components/audio1.mp3")
+        const audio = new Audio("/sound/audio1.mp3")
         audio.play();
     };
      
@@ -69,6 +69,15 @@ const Story = () => {
         sound.play();
     };
 
+    let initAudio = () => {
+        const targetAudio = document.getElementsByClassName("audioBtn1")[0];
+        targetAudio.play();
+      };
+
+    
+
+
+
     return (
         <div className="Story-container">
             <div className="toneteller-input-div">
@@ -84,7 +93,10 @@ const Story = () => {
                     type="submit">Generate Story</button>
                 </form>
             </div>
-            <button onClick={() => handleAudioOne()}>Audio Button</button>
+            <button className="btn btn-danger" onClick={initAudio}>Play Audio</button>
+            <audio className="audioBtn1">
+                <source src="/sound/audio1.mp3"></source>
+            </audio>
 
             <div>
             {storyData && (
