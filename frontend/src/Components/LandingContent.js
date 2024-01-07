@@ -10,7 +10,7 @@ export default function Hero() {
             <div className="storytime-text">
                 <p className="heading-4">WELCOME TO STORY TIME</p>
                 <p className="body-text overline-text">
-                    Select a mascot, enter a prompt, and enjoy a special story told from the perspective of your mascot's unique personality.
+                    Select a character, enter a prompt, and enjoy a special story told from the perspective of your character's unique personality.
                 </p>
 
                 <div className="storytext-button">
