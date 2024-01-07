@@ -39,6 +39,11 @@
   src: url(../public/fonts/Epilogue-VariableFont_wght.ttf);
 }
 
+@font-face { 
+  font-family: Handjet;
+  src: url(../public/fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf);
+}
+
 body {
   margin: 0;
 }
@@ -85,7 +90,7 @@ p {
 }
 
 .heading-4 {
-  font-family: "GloriaHallelujah";
+  font-family: "Handjet";
   font-size: 2.25rem;
   /* 36px */
   line-height: 2.5rem;
