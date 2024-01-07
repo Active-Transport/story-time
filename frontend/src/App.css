@@ -159,10 +159,10 @@ p {
 
 .primary-button {
   padding: 12px 20px;
-  background-color: var(--#ffffff);
+  background-color: #ffffff;
   color: var(--light-coral);
-  border: none;
   border-radius: 20px;
+  border: none;
 }
 
 .secondary-button {
@@ -241,7 +241,6 @@ p {
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Canterella', sans-serif;
