@@ -28,9 +28,9 @@ def receive_input():
         # Check if paragraphs are successfully retrieved
         
         if isinstance(paragraphs, list) and len(paragraphs) >= 3:
-            text_to_speech(paragraphs[0], "../frontend/src/Components/audio1.mp3")
-            text_to_speech(paragraphs[1], "audio2.mp3")
-            text_to_speech(paragraphs[2], "audio3.mp3")
+            text_to_speech(paragraphs[0], "../frontend/public/sound/audio1.mp3")
+            text_to_speech(paragraphs[1], "../frontend/public/sound/audio2.mp3")
+            text_to_speech(paragraphs[2], "../frontend/public/sound/audio3.mp3")
             return jsonify({
                 "paragraph1": paragraphs[0],
                 "paragraph2": paragraphs[1],
