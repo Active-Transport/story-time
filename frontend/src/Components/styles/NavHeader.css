@@ -54,6 +54,10 @@
     height: 48px;
 }
 
+.heading-4 {
+    text-decoration: none;
+}
+
 .display-none {
     display: none;
 }
