@@ -26,7 +26,11 @@ const Story = () => {
 
 
     // AUDIO THINGS
-    const audioClip = { sound: "http://soundbible.com/mp3/Upper Cut-SoundBible.com-1272257235.mp3", label: "upper cut" };
+
+
+
+
+    const audioClip = { sound: storyData.audio, label: "upper cut" };
     const playSound = (src) => {
         const sound = new Howl({
             src,

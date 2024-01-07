@@ -13,7 +13,6 @@ app = Flask(__name__)
 CORS(app)
 
 @app.route('/receive_input', methods=['POST'])
-@app.route('/receive_input', methods=['POST'])
 def receive_input():
     try:
         data = request.json
@@ -32,7 +31,10 @@ def receive_input():
             return jsonify({
                 "paragraph1": paragraphs[0],
                 "paragraph2": paragraphs[1],
-                "paragraph3": paragraphs[2]
+                "paragraph3": paragraphs[2],
+                audio1:
+                audio2:
+                audio3
             })
         else:
             return jsonify({"error": "Error generating story"}), 500
@@ -54,7 +56,6 @@ def get_text_story(prompt):
         output = replicate.run('a16z-infra/llama13b-v2-chat:df7690f1994d94e96ad9d568eac121aecf50684a0b0963b25a41cc40061269e5',
                                 input={"prompt": f"{pre_prompt} {prompt}. Divide it into three paragraphs.",
                                 "temperature":0.80, "top_p":0.9, "max_length":1028, "repetition_penalty":1})
-        
 
         
         full_response = "".join(output)
@@ -71,16 +72,16 @@ def get_text_story(prompt):
         return None
 
 
-@app.route('/audio', methods=['GET'])
-def text_to_speech():
+# @app.route('/audio', methods=['GET'])
+def text_to_speech(paragraphs):
     set_api_key("a8dcd58e5e9377da6afa4f525e89769f")
     
     # get the input from the Body of the request
-    inputText = str(request.get_json()['audio'])
+    # inputText = str(request.get_json()['audio'])
     
     # Assuming ElevenLabs is a class or module with a generate method
     audio_data = elevenlabs.generate(
-        text=inputText,
+        text=paragraphs[0],
         voice="N2lVS1w4EtoT3dr4eOWO",
         model="eleven_multilingual_v2"
     )
