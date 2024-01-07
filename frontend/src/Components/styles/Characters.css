@@ -1,7 +1,8 @@
 .toneteller-div {
     display: flex;
     flex-direction: column;
-    height: calc(100vh);
+    min-height: 100vh;
+    height: auto;
     justify-content: flex-start;
     overflow: hidden;
     background-color: var(--baby-yellow);

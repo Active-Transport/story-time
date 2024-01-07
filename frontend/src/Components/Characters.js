@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "./Button";
 import "./styles/Characters.css";
-
+import Story from "./story";
 export default function Storytime() {
     const [print, setPrint] = useState(false);
     const [clickedCharacter, setClickedCharacter] = useState(null);
@@ -78,31 +78,7 @@ export default function Storytime() {
 
             {console.log(clickedCharacter)};
             {clickedCharacter && (
-                <div className="toneteller-input-div">
-                    <input id="inputField" type="text" onChange={() => { setPrint(false) }} onKeyUp={
-                        (e) => {
-                            console.log(e.key)
-                            if (e.key === 'Enter') {
-                                fetchData()
-                            }
-                        }
-                    } />
-
-                    <div className="storytime-input-div">
-                        <div className="button-container">
-
-                            <button
-                                className="secondary-button heading-5 "
-                                onClick={() => fetchData()}
-                            >
-                                Tell the story
-                            </button>
-
-
-                        </div>
-                    </div>
-                </div>
-
+                <Story/>
             )}
         </div>
     );
