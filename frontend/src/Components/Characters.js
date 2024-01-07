@@ -89,40 +89,44 @@ export default function Toneteller() {
             <div className="characters-grid">
                 <button className="characters-column" onClick={() => handleCharacterClick('character1')}>
                     <div className="characters-img background-blue">
-                        <img src="/public/icons/blizzard.png" alt="storytime Image 1" />
+                        <img src="/icons/Polar_Bear.png" alt="https://placehold.co/400" />
                     </div>
                 </button>
 
                 <button className="characters-column" onClick={() => handleCharacterClick('character2')}>
                     <div className="characters-img background-gold">
-                        <img src="/public/icons/sapphire.png" alt="storytime Image 2" />
+                        <img src="/icons/Flying_bird-rafiki.png" alt="https://placehold.co/400" />
                     </div>
                 </button>
 
                 <button className="characters-column" onClick={() => handleCharacterClick('character3')}>
                     <div className="characters-img background-green">
-                        <img src="/public/icons/paprika.png" alt="storytime Image 3" />
+                        <img src="/icons/Dragon-pana.png" alt="https://placehold.co/400" />
                     </div>
                 </button>
             </div>
 
             {clickedCharacter && (
-                <div className="toneteller-input-div">
-                    <input id="inputField" type="text" onChange={() => { setPrint(false) }} onKeyUp={
-                        (e) => {
-                            console.log(e.key)
-                            if (e.key === 'Enter') {
-                                fetchData()
-                            }
-                        }
-                    } />
-                    <button
-                        className="secondary-button heading-5"
-                        onClick={() => fetchData()}
+                <div>
 
-                    >
-                        Tell the story
-                    </button>
+                    <div className="storytime-input-div">
+                        <input
+                            id={`inputField_${clickedCharacter}`}
+                            type="text"
+                            onChange={() => setPrint(false)}
+                            onKeyUp={(e) => {
+                                if (e.key === 'Enter') {
+                                    fetchData();
+                                }
+                            }}
+                        />
+                        <button
+                            className="secondary-button heading-5 "
+                            onClick={() => fetchData()}
+                        >
+                            Tell the story
+                        </button>
+                    </div>
                 </div>
 
             )}
