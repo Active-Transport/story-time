@@ -66,15 +66,11 @@ export default function Toneteller() {
         <div className="toneteller-div">
             <div className="toneteller-text">
                 {print ? (
-                    <div className="heading-3">Analyzing sentiment...</div>
+                    <div className="heading-3">Preparing your story...</div>
                 ) : (
                     <div className="heading-3">Choose your story</div>
                 )}
-                {print ? (
-                    <div className="body-title">Sentiment for prompt: {tone}</div>
-                ) : (
-                    <div className="body-text">{null}</div>
-                )}
+
                 {print ? (
                     <div className="body-text">
                         <i>{document.getElementById("inputField").value}</i>
@@ -116,35 +112,18 @@ export default function Toneteller() {
                             }
                         }
                     } />
-                    <button
-                        className="secondary-button heading-5"
-                        onClick={() => fetchData()}
-                    />
 
                     <div className="storytime-input-div">
-                        
-                        <textarea 
-                            className="storytime-input"
-                            id={`inputField_${clickedCharacter}`}
-                            type="text"
-                            onChange={() => setPrint(false)}
-                            onKeyUp={(e) => {
-                                if (e.key === 'Enter') {
-                                    fetchData();
-                                }
-                            }}
-                        />
-
                         <div className="button-container">
-                            <img src="/icons/Logo.jpg" alt="https://placehold.co/400" />
+
                             <button
                                 className="secondary-button heading-5 "
                                 onClick={() => fetchData()}
                             >
                                 Tell the story
                             </button>
-                        
-                        
+
+
                         </div>
                     </div>
                 </div>
