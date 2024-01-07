@@ -55,23 +55,32 @@ const Story = () => {
             <div>
             {storyData && (
                 <div>
-                    <div className="audio-div">
-                        <h2>Listen along to the story!</h2>
-                        <button onClick={() => playSound(audioClip.sound)}>Audio Button</button>
-                    </div>
+                    
 
 
                     <div className="story-part">
+                        <div className="audio-div">
+                            <h2>Listen along to the story!</h2>
+                            <button onClick={() => playSound(audioClip.sound)}>Audio Button</button>
+                        </div>
                         <img src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
                         <p>{storyData.paragraph1}</p>
     
                     </div>
                     <div className="story-part">
+                        <div className="audio-div">
+                            <h2>Listen along to the story!</h2>
+                            <button onClick={() => playSound(audioClip.sound)}>Audio Button</button>
+                        </div>
                         <img src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
                         <p>{storyData.paragraph2}</p>
     
                     </div>
                     <div className="story-part">
+                        <div className="audio-div">
+                            <h2>Listen along to the story!</h2>
+                            <button onClick={() => playSound(audioClip.sound)}>Audio Button</button>
+                        </div>
                         <img src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
                         <p>{storyData.paragraph3}</p>
     
