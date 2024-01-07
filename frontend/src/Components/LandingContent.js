@@ -34,23 +34,23 @@ export default function Hero() {
                     <div className="profile-pics">
 
                         <div>
-                            <img src="/icons/paprika.png" alt="https://placehold.co/400" />
+                            <img src="/icons/Yui_icon.png"/>
                             <h2>Yui</h2>
                         </div>
                         <div>
-                            <img src="/icons/paprika.png" alt="https://placehold.co/400" />
+                            <img src="/icons/Trinity_icon.png" />
                             <h2>Trinity</h2>
                         </div>
                         <div>
-                            <img src="/icons/paprika.png" alt="https://placehold.co/400" />
+                            <img src="/icons/Tyler_icon.png" />
                             <h2>Tyler</h2>
                         </div>
                         <div>
-                            <img src="/icons/paprika.png" alt="https://placehold.co/400" />
+                            <img src="/icons/Aniket_icon.png" />
                             <h2>Aniket</h2>
                         </div>
                         <div>
-                            <img src="/icons/paprika.png" alt="https://placehold.co/400" />
+                            <img src="/icons/Kait_icon.png" />
                             <h2>Kait</h2>
                         </div>
                     </div>
