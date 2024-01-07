@@ -34,7 +34,6 @@ PADDING
 
 .storytime-text {
     text-align: left;
-    border-radius: 0.5rem;
     background-color: #FFFAEE;
     padding: 20px;
     padding-bottom: 40px;
@@ -46,6 +45,7 @@ PADDING
     justify-content: flex-start;
     font-family: 'Epilogue';
     color: var(--light-coral);
+    font-size: 0.5rem;
 }
 
 .storytime-text>p {
