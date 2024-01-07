@@ -1,0 +1,58 @@
+.Story-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #FFFAEE;
+
+}
+.audio-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    height: 100px;
+    width: 700px;
+    background-color: #FFFAEE;
+    border-radius: 0.5rem;
+
+}
+
+
+.Story-container button {
+    width: 200px;
+    height: 80px;
+    justify-self: center;
+    background-color: #F8AD9D;
+    border-radius: 0.5rem;
+}
+
+
+.story-part { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFAEE;
+    border-radius: 0.5rem;
+    height: 500px;
+    width: 700px;
+    margin: auto;
+    padding: 4rem;
+    
+}
+
+.story-part img{
+    width: 100%;
+    max-width: 400px;
+    height: 260px;
+    margin: 2rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+.story-part p {
+padding: 0rem 1rem 1rem 1rem}

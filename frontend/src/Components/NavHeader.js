@@ -35,12 +35,12 @@ function NavHeader() {
                     }
                 >
                     <div className="navigation-title" >
-                        <h1>STORY TIME!</h1>
+                        <Link to="/" className="heading-4">
+                            <h1>Story Time!</h1>
+                            </Link>
                     </div>
                     <div className="navigation-right-column">
-                        <div className="navigation-links">
-                            {button && <Button />}
-                        </div>
+                    
                         <div
                             onClick={handleClick}
                             className={click ? "navigation-close" : "navigation-menu"}
