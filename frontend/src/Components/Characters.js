@@ -2,39 +2,7 @@ import React, { useState } from "react";
 import { Button } from "./Button";
 import "./styles/Characters.css";
 
-let tones = {
-    curiosity: "curiosity 🤔",
-    joy: "Happy 🙂",
-    love: "love 😍",
-    admiration: "admiration 🏆",
-    approval: "approval 👍",
-    caring: "caring 💝",
-    exitement: "exitement 😃",
-    amusement: "amusement 😄",
-    gratitude: "gratitude ❓",
-    desire: "desire ❓",
-    anger: "anger 😠",
-    optimism: "optimism ❓",
-    disapproval: "disapproval 👎",
-    grief: "grief 😢",
-    annoyance: "annoyance 😩",
-    pride: "pride 😏",
-    disgust: "disgust 🤮",
-    disappointment: "disappointment 😬",
-    realization: "realization ?",
-    fear: "fear 😨",
-    relief: "relief ?",
-    confusion: "confusion 🤔",
-    remorse: "remose ?",
-    embarrassment: "embarrassment 😳",
-    surprise: "surprise 😮",
-    sadness: "sadness 😭",
-    nervousness: "nervousness 😖",
-    neutral: "neutral 😑"
-};
-
-export default function Toneteller() {
-    const [tone, setTone] = useState(null);
+export default function Storytime() {
     const [print, setPrint] = useState(false);
     const [clickedCharacter, setClickedCharacter] = useState(null);
 
@@ -58,7 +26,7 @@ export default function Toneteller() {
             .then((res) => res.json())
             .then((data) => {
                 data = data[0];
-                setTone(tones[data[0]["label"]]);
+                setClickedCharacter(data);
             });
     };
 
