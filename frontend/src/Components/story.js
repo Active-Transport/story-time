@@ -98,9 +98,6 @@ const Story = () => {
             <div>
             {storyData && (
                 <div>
-                    
-
-
                     <div className="story-part">
                         <div className="audio-div">
                             <button className="btn btn-danger" onClick={handleAudioOne}>Play Audio</button>
