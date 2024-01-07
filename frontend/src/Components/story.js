@@ -44,7 +44,7 @@ const Story = () => {
     // };
     
     const handleAudioOne = () => {
-        const audio = new Audio("/icons/audio1.mp3")
+        const audio = new Audio("frontend/src/Components/audio1.mp3")
         audio.play();
     };
      
