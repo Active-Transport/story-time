@@ -38,9 +38,7 @@ function NavHeader() {
                         <h1>STORY TIME!</h1>
                     </div>
                     <div className="navigation-right-column">
-                        <div className="navigation-links">
-                            {button && <Button />}
-                        </div>
+                    
                         <div
                             onClick={handleClick}
                             className={click ? "navigation-close" : "navigation-menu"}

@@ -12,8 +12,8 @@ function App() {
       <Router>
         <NavHeader />
         <Routes>
-          <Route path="/StoryTime/" element={<Home />} />
-          <Route path="StoryTime/characters" element={<Characters />} />
+          <Route path="/" element={<Home />} />
+          <Route path="StoryTime/" element={<Characters />} />
         </Routes>
       </Router>
     </>
