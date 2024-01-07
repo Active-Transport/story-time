@@ -41,11 +41,17 @@
     height: 500px;
     width: 700px;
     margin: auto;
+    padding: 4rem;
+    
 }
 
 .story-part img{
-    width: 90%;
+    width: 100%;
+    max-width: 400px;
     height: 260px;
+    margin: 2rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
 }
 
 .story-part p {

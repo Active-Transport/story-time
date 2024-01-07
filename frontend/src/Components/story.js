@@ -24,6 +24,24 @@ const Story = () => {
         console.log(data);
     };
 
+
+    // const getImages = async (event) => {
+    //     event.preventDefault();
+    //     const requestOptions = {
+    //         method: 'POST',
+    //         headers: { 'Content-Type': 'application/json' },
+    //         body: JSON.stringify({ storyData })
+    //     };
+
+    //     // Replace URL with your Flask server endpoint
+    //     const response = await fetch('http://127.0.0.1:5000/receive_input', requestOptions);
+    //     const data = await response.json();
+    //     setStoryData(data);
+    //     console.log(data);
+    // };
+
+
+
     const fakeStory = ["In the Arctic's frozen expanse lived a young polar bear named Blizzard, known for his snowy fur and bright eyes. Blizzard loved exploring the icy landscape, marveling at the northern lights, and playing amidst the icebergs. His adventurous spirit was matched only by his curiosity about the world around him.",
 
     "One day, Blizzard noticed the ice melting unusually fast, threatening his home. Determined to find a solution, he embarked on a journey across the Arctic. Meeting various animals, Blizzard learned about the ecosystem, the impact of climate change, and the importance of his home. These encounters filled him with resolve and ideas to make a difference.",
@@ -64,24 +82,6 @@ const Story = () => {
         targetAudio.play();
     };
 
-    const audioClip = { sound: "http://soundbible.com/mp3/Upper Cut-SoundBible.com-1272257235.mp3", label: "upper cut" };
-    const playSound = (src) => {
-        const sound = new Howl({
-            src,
-            html5: true // Allows the audio to play in mobile devices
-        });
-
-        sound.play();
-    };
-
-    let initAudio = () => {
-        const targetAudio = document.getElementsByClassName("audioBtn1")[0];
-        targetAudio.play();
-      };
-
-    
-
-
 
     return (
         <div className="Story-container">
@@ -110,7 +110,7 @@ const Story = () => {
                                 <source src="/sound/audio1.mp3"></source>
                             </audio>
                         </div>
-                        <img src="/image/image1.jpg" alt="https://placehold.co/400" />
+                        <img src="/icons/polar1.png" alt="https://placehold.co/400" />
                         <p>{fakeStory[0]}</p>
                         <p>{storyData.paragraph1}</p>
     
@@ -122,7 +122,7 @@ const Story = () => {
                                 <source src="/sound/audio2.mp3"></source>
                             </audio>
                         </div>
-                        <img src="/image/image2.jpg" alt="https://placehold.co/400" />
+                        <img src="/icons/polar2.png" alt="https://placehold.co/400" />
                         <p>{fakeStory[1]}</p>
                         <p>{storyData.paragraph2}</p>
     
@@ -134,7 +134,7 @@ const Story = () => {
                                 <source src="/sound/audio3.mp3"></source>
                             </audio>
                         </div>
-                        <img src="/image/image3.jpg" alt="https://placehold.co/400" />
+                        <img src="/icons/polar3.png" alt="https://placehold.co/400" />
                         <p>{fakeStory[2]}</p>
                         <p>{storyData.paragraph3}</p>
                     </div>
