@@ -86,8 +86,9 @@ def text_to_speech(paragraphs, filename):
         voice="N2lVS1w4EtoT3dr4eOWO",
         model="eleven_multilingual_v2"
     )
+    
     # save the audio data to a file
-    elevenlabs.save(audio_data, "audio.mp3")
+    elevenlabs.save(audio_data, filename)
     
     # delete the audio file after sending it
     # @after_this_request
@@ -96,7 +97,7 @@ def text_to_speech(paragraphs, filename):
     #     return response
 
     # return the audio file as mp3
-    return send_file("audio.mp3", mimetype="audio/mp3")
+    # return send_file("audio.mp3", mimetype="audio/mp3")
 
 
 
