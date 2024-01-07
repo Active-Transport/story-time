@@ -28,13 +28,14 @@ def receive_input():
         # Check if paragraphs are successfully retrieved
         
         if isinstance(paragraphs, list) and len(paragraphs) >= 3:
+            text_to_speech(paragraphs[0], "audio1.mp3")
+            text_to_speech(paragraphs[1], "audio2.mp3")
+            text_to_speech(paragraphs[2], "audio3.mp3")
             return jsonify({
                 "paragraph1": paragraphs[0],
                 "paragraph2": paragraphs[1],
                 "paragraph3": paragraphs[2],
-                audio1:
-                audio2:
-                audio3
+             
             })
         else:
             return jsonify({"error": "Error generating story"}), 500
@@ -73,7 +74,7 @@ def get_text_story(prompt):
 
 
 # @app.route('/audio', methods=['GET'])
-def text_to_speech(paragraphs):
+def text_to_speech(paragraphs, filename):
     set_api_key("a8dcd58e5e9377da6afa4f525e89769f")
     
     # get the input from the Body of the request
