@@ -81,10 +81,7 @@ export default function Toneteller() {
                     </div>
                 ) : (
                     <div className="body-text">
-                        Tired of trying to decipher the tone of an email or text message? Do
-                        you want to communicate with greater empathy and understanding?
-                        Enter a prompt below and decipher the tone and sentiment of its
-                        writer.
+                        Select a character and enter a prompt below to generate a unique story.
                     </div>
                 )}
             </div>
