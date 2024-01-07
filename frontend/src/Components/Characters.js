@@ -107,9 +107,9 @@ export default function Toneteller() {
             </div>
 
             {clickedCharacter && (
-                <div className="enter-prompt-div">
-                    <div className="enter-prompt-input-text body-title">Enter a prompt</div>
-                    <div className="toneteller-input-div">
+                <div>
+
+                    <div className="storytime-input-div">
                         <input
                             id={`inputField_${clickedCharacter}`}
                             type="text"
@@ -121,7 +121,7 @@ export default function Toneteller() {
                             }}
                         />
                         <button
-                            className="primary-button button-sm body-title"
+                            className="secondary-button heading-5 "
                             onClick={() => fetchData()}
                         >
                             Tell the story
