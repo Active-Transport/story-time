@@ -18,6 +18,8 @@ PADDING
 }
 
 .primary-button { 
+    background-color: #FFF;
+    border: 1px solid black;
     width: 180px;
 }
 
