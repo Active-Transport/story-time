@@ -72,6 +72,10 @@
     height: 92%;
 }
 
+.heading-4 {
+    text-decoration: none;
+}
+
 .navigation-mobile-links {
     display: flex;
     flex-direction: column;
