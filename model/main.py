@@ -82,7 +82,7 @@ def text_to_speech(paragraphs, filename):
     
     # Assuming ElevenLabs is a class or module with a generate method
     audio_data = elevenlabs.generate(
-        text=paragraphs[0],
+        text=paragraphs,
         voice="N2lVS1w4EtoT3dr4eOWO",
         model="eleven_multilingual_v2"
     )
@@ -102,11 +102,11 @@ def text_to_speech(paragraphs, filename):
 
 
 
-# @app.route('/image', methods=['GET'])
+@app.route('/image', methods=['GET'])
 def image_gen():
     # generate image
     # get the input from the Body of the request
-    inputText = str(request.get_json()['prompt'])
+    inputText ="A tree in a forest"
 
     engine_id = "stable-diffusion-v1-6"
     api_host = os.getenv('API_HOST', 'https://api.stability.ai')
@@ -132,7 +132,7 @@ def image_gen():
             "height": 1024,
             "width": 1024,
             "samples": 1,
-            "steps": 30,
+            "steps": 10,
         },
     )
 
@@ -141,7 +141,14 @@ def image_gen():
 
     data = response.json()
 
-    # save the image to a file
+    # save the image file as png 
+    
+    for i, image in enumerate(data["artifacts"]):
+        with open(f"v1_txt2img_{i}.png", "wb") as f:
+            f.write(base64.b64decode(image["base64"]))
 
+    # delete the image file after sending it
+    # return text "image generated"
+    return jsonify({"error": "Error generating story"})
 if __name__ == "__main__":
     app.run(debug=True)
