@@ -14,7 +14,7 @@ export default function Hero() {
                 </p>
 
                 <div className="storytext-button">
-                    <Link to="/SECOND PAGE">
+                    <Link to="/StoryTime/characters">
                         <button className="primary-button heading-5">
                             Create New Tale
                         </button>
