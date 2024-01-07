@@ -3,6 +3,8 @@ from io import BytesIO
 import wave
 import replicate
 import elevenlabs
+import base64
+import requests
 from elevenlabs import set_api_key
 from flask import Flask, request, send_file, after_this_request
 
@@ -10,7 +12,7 @@ app = Flask(__name__)
 
 @app.route('/text', methods=['GET'])
 def get_text_story():
-    os.environ["REPLICATE_API_TOKEN"] = "r8_bTl0E2JSNdbvBMNDuSRpzCQpV8OpVyc4VPBcr"
+    os.environ["REPLICATE_API_TOKEN"] = "r8_bCD43r2879YnQ8IWXGKaGIi9vJbypfG1IU9Af"
 
     # Prompts
     pre_prompt = "Tell a dark and gruesome story about"
@@ -76,3 +78,46 @@ def text_to_speech():
 
     # return the audio file as mp3
     return send_file("audio.mp3", mimetype="audio/mp3")
+
+@app.route('/image', methods=['GET'])
+def image_gen():
+    # generate image
+    # get the input from the Body of the request
+    inputText = str(request.get_json()['prompt'])
+
+    engine_id = "stable-diffusion-v1-6"
+    api_host = os.getenv('API_HOST', 'https://api.stability.ai')
+    api_key = os.getenv("STABILITY_API_KEY")
+
+    if api_key is None:
+        raise Exception("Missing Stability API key.")
+
+    response = requests.post(
+        f"{api_host}/v1/generation/{engine_id}/text-to-image",
+        headers={
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        },
+        json={
+            "text_prompts": [
+                {
+                    "text": "A lighthouse on a cliff"
+                }
+            ],
+            "cfg_scale": 7,
+            "height": 1024,
+            "width": 1024,
+            "samples": 1,
+            "steps": 30,
+        },
+    )
+
+    if response.status_code != 200:
+        raise Exception("Non-200 response: " + str(response.text))
+
+    data = response.json()
+
+    for i, image in enumerate(data["artifacts"]):
+        with open(f"./out/v1_txt2img_{i}.png", "wb") as f:
+            f.write(base64.b64decode(image["base64"]))
