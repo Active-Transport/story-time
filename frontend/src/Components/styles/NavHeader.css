@@ -7,6 +7,7 @@
     background-color: #FBC4AB;
     max-height: 100vh;
 }
+
 .navigation-content {
     display: flex;
     flex-direction: row;
@@ -60,6 +61,10 @@
 
 .display-none {
     display: none;
+}
+
+.heading-4 {
+    text-decoration: none;
 }
 
 .navigation-mobile {
