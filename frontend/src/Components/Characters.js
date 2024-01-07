@@ -87,20 +87,24 @@ export default function Toneteller() {
                     <div className="characters-img background-blue">
                         <img src="/icons/blizzard.png" alt="https://placehold.co/400" />
                     </div>
+                    <p className="heading-6">Blizzard</p>
                 </button>
 
                 <button className="characters-column" onClick={() => handleCharacterClick('character2')}>
                     <div className="characters-img background-gold">
                         <img src="/icons/sapphire.png" alt="https://placehold.co/400" />
                     </div>
+                    <p className="heading-6">Sapphire</p>
                 </button>
 
                 <button className="characters-column" onClick={() => handleCharacterClick('character3')}>
                     <div className="characters-img background-green">
                         <img src="/icons/paprika.png" alt="https://placehold.co/400" />
                     </div>
+                    <p className="heading-6">Paprika</p>
                 </button>
             </div>
+
 
             {clickedCharacter && (
                 <div className="toneteller-input-div">

@@ -79,7 +79,6 @@ p {
 .heading-2 {
   font-family: Abyss;
   font-size: 3.125rem;
-  /* 60px */
   line-height: 1;
   margin-bottom: 30px;
 }
@@ -87,7 +86,7 @@ p {
 .heading-3 {
   font-family: "Epilogue";
   font-size: 2rem;
-  /* 48px */
+
   line-height: 1;
   font-weight: 700;
   color: var(--coral-pink);
@@ -96,29 +95,23 @@ p {
 .heading-4 {
   font-family: "Handjet";
   font-size: 2.25rem;
-  /* 36px */
+
   line-height: 2.5rem;
-  /* 40px */
+
 }
 
 .heading-5 {
   font-family: 'GloriaHallelujah';
   font-weight: 700;
   margin-bottom: 20px;
-  font-size: 1.5rem;
-  /* 24px */
   line-height: 2rem;
-  /* 32px */
+
 }
 
 .heading-6 {
-  font-family: 'Cantarell';
-  font-weight: 700;
-  font-size: 1.25rem;
-  /* 20px */
-  line-height: 1.75rem;
-  /* 28px */
-  margin-bottom: 10px;
+  font-family: 'GloriaHallelujah';
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .heading-7 {
