@@ -10,7 +10,7 @@ export default function Hero() {
             <p className="heading-4">WELCOME TO STORY TIME</p>
             <div className="storytime-text">
                 <p>Follow our colourful characters as they generate & narrate unique stories that are guaranteed to entertain. With a simple prompt, you can unlock boundless creativity.</p>
-               
+
 
                 <div className="storytext-button">
                     <img className="storytext-img" src="/icons/logo_cream.jpg" alt="https://placehold.co/400" />
@@ -18,11 +18,11 @@ export default function Hero() {
                         <div>
                             <p>Imagine. Create. Captivate.</p>
                             <p>Your story awaits.</p>
-                            <br/>
+                            <br />
                             <p>Welcome to Story Time </p>
                         </div>
                         <Link to="/StoryTime">
-                            <button className="primary-button heading-5">
+                            <button className="secondary-button heading-5">
                                 Create New Tale
                             </button>
                         </Link>
@@ -34,7 +34,7 @@ export default function Hero() {
                     <div className="profile-pics">
 
                         <div>
-                            <img src="/icons/Yui_icon.png"/>
+                            <img src="/icons/Yui_icon.png" />
                             <h2>Yui</h2>
                         </div>
                         <div>
