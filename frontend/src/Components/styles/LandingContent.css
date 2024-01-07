@@ -6,6 +6,16 @@ PADDING
 
 }
 
+.heading-5:hover{
+    scale: 1.1;
+    transition: 0.25s;
+}
+
+.heading-5{
+    transition: 0.25s;
+}
+
+
 .landing-content {
 
     display: flex;
