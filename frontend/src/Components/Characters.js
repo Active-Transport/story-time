@@ -88,6 +88,7 @@ export default function Toneteller() {
                         <img src="/icons/blizzard.png" alt="https://placehold.co/400" />
                     </div>
                     <p className="heading-6">Blizzard</p>
+                    <p className="heading-7">playful + curious</p>
                 </button>
 
                 <button className="characters-column" onClick={() => handleCharacterClick('character2')}>
@@ -95,6 +96,7 @@ export default function Toneteller() {
                         <img src="/icons/sapphire.png" alt="https://placehold.co/400" />
                     </div>
                     <p className="heading-6">Sapphire</p>
+                    <p className="heading-7">kind + sensitive</p>
                 </button>
 
                 <button className="characters-column" onClick={() => handleCharacterClick('character3')}>
@@ -102,6 +104,7 @@ export default function Toneteller() {
                         <img src="/icons/paprika.png" alt="https://placehold.co/400" />
                     </div>
                     <p className="heading-6">Paprika</p>
+                    <p className="heading-7">fierce + strong</p>
                 </button>
             </div>
 

@@ -115,11 +115,10 @@ p {
 }
 
 .heading-7 {
-  font-family: 'Cantarell';
-  font-size: 1.25rem;
-  /* 20px */
-  line-height: 1.75rem;
-  /* 28px */
+  font-family: 'GloriaHallelujah';
+  font-size: 2.0rem;
+  line-height: 2.5rem;
+  color: var(--melon)
 }
 
 .body-text {
