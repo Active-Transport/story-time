@@ -136,6 +136,8 @@ p {
   color: var(--light-coral);
   font-weight: 500;
   font-style: italic;
+  display: flex;
+  justify-content: center;
 }
 
 .body-title {

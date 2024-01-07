@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     height: calc(100vh);
-    justify-content: space-between;
+    justify-content: flex-start;
     overflow: hidden;
     background-color: var(--baby-yellow);
 }
@@ -35,10 +35,12 @@
 .toneteller-text,
 .enter-prompt-div {
     padding: 20px;
+
 }
 
 .toneteller-text>.heading-3 {
     margin-bottom: 20px;
+    display: flex;
 }
 
 .enter-prompt-div {
@@ -52,7 +54,9 @@
 
 .characters-grid {
     margin-bottom: 20px;
+    margin-top: 20px;
     display: flex;
+    justify-content: flex-start;
     flex-direction: row;
     gap: 0px;
 
@@ -70,8 +74,8 @@
 
 .characters-img {
     border-radius: 20px;
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     aspect-ratio: 1 / 1;
     margin-bottom: 20px;
     padding: 20px;
