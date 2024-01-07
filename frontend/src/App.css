@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --green: #6FCA67;
+  --orange: #f4a261;
+  --red: #e76f51;
+  --blue: #68C7EA;
+  --white: #ffffff;
+  --black: #000000;
+  --cyan: #22d3ee;
+  --sky: #38bdf8;
+  --indigo: #818cf8;
+  --violet: #a78bfa;
+  --purple: #c084fc;
+  --fuchsia: #e879f9;
+  --pink: #f472b6;
+  --rose: #fb7185;
+  --teal: #2dd4bf;
+  --gold: #FFD66E;
+
+  --light-coral: #F08080;
+  --coral-pink: #F4978E;
+  --melon: #F8AD9D;
+  --apricot: #FBC4AB;
+  --light-orange: #FFDAB9;
+  --yellow-400: #fae6b7;
+  --yellow-300: #fbebc5;
+  --yellow-200: #fcf0d4;
+  --yellow-100: #fdf5e2;
+  --yellow-50: #fefaf1;
+  --baby-yellow: #FFFAEE;
+}
+
+@font-face {
+  font-family: GloriaHallelujah;
+  src: url(../public/fonts/GloriaHallelujah-Regular.ttf);
+}
+
+@font-face {
+  font-family: Epilogue;
+  src: url(../public/fonts/Epilogue-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Handjet;
+  src: url(../public/fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+i {
+  font-family: 'Cantarell';
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+p {
+  font-family: 'Cantarell';
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+.title {
+  font-family: Abyss;
+  font-size: 6rem;
+  /* 96px */
+  line-height: 1;
+}
+
+.heading-1 {
+  font-family: Abyss;
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.heading-2 {
+  font-family: Abyss;
+  font-size: 3.125rem;
+  /* 60px */
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.heading-3 {
+  font-family: "Epilogue";
+  font-size: 2rem;
+  /* 48px */
+  line-height: 1;
+  font-weight: 700;
+  color: var(--coral-pink);
+}
+
+.heading-4 {
+  font-family: "Handjet";
+  font-size: 2.25rem;
+  /* 36px */
+  line-height: 2.5rem;
+  /* 40px */
+}
+
+.heading-5 {
+  font-family: 'GloriaHallelujah';
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  /* 24px */
+  line-height: 2rem;
+  /* 32px */
+}
+
+.heading-6 {
+  font-family: 'Cantarell';
+  font-weight: 700;
+  font-size: 1.25rem;
+  /* 20px */
+  line-height: 1.75rem;
+  /* 28px */
+  margin-bottom: 10px;
+}
+
+.heading-7 {
+  font-family: 'Cantarell';
+  font-size: 1.25rem;
+  /* 20px */
+  line-height: 1.75rem;
+  /* 28px */
+}
+
+.body-text {
+  font-family: 'Epilogue';
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--light-coral);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.body-title {
+  font-family: 'Cantarell';
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+}
+
+.caption-text {
+  font-family: 'Cantarell';
+  font-size: 0.875rem;
+  /* 14px */
+  line-height: 1.25rem;
+  /* 20px */
+}
+
+.overline-text {
+  font-family: 'Cantarell';
+  font-weight: 700;
+  font-size: 0.875rem;
+  /* 12px */
+  line-height: 1rem;
+  /* 16px */
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.primary-button {
+  padding: 12px 20px;
+  background-color: var(--#ffffff);
+  color: var(--light-coral);
+  border: none;
+  border-radius: 20px;
+}
+
+
+.button-sm {
+  padding: 8px 12px !important;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.background-white {
+  background-color: var(--white);
+}
+
+.background-green {
+  background-color: var(--green);
+}
+
+.background-orange {
+  background-color: var(--orange);
+}
+
+.background-red {
+  background-color: var(--red);
+}
+
+.background-cyan {
+  background-color: var(--cyan);
+}
+
+.background-sky {
+  background-color: var(--sky);
+}
+
+.background-indigo {
+  background-color: var(--indigo);
+}
+
+.background-violet {
+  background-color: var(--violet);
+}
+
+
+.background-rose {
+  background-color: var(--rose);
+}
+
+.background-purple {
+  background-color: var(--purple);
+}
+
+.background-blue {
+  background-color: var(--blue);
+}
+
+.background-teal {
+  background-color: var(--teal);
+}
+
+.background-fuchsia {
+  background-color: var(--fuchsia);
+}
+
+.background-pink {
+  background-color: var(--pink);
+}
+
+.background-gold {
+  background-color: var(--gold);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Canterella', sans-serif;
+}
+
+.about,
+.chrome,
+.FAQ,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.chrome {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.FAQ {
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
