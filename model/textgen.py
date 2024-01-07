@@ -17,7 +17,7 @@ prompt_input = "baby Yoda"
 import replicate
 
 # Prompts
-pre_prompt = "Tell a happy and funny story about"
+pre_prompt = "Tell a dark and gruesome story about"
 prompt_input = "Mickey Mouse"
 
 # Generate LLM response
