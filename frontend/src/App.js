@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="StoryTime/" element={<Characters />} />
         </Routes>
-      </Router>
+      </Router> 
     </>
   );
 }

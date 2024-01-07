@@ -89,19 +89,19 @@ export default function Toneteller() {
             <div className="characters-grid">
                 <button className="characters-column" onClick={() => handleCharacterClick('character1')}>
                     <div className="characters-img background-blue">
-                        <img src="/public/icons/blizzard.png" alt="storytime Image 1" />
+                        <img src="/icons/Polar_Bear.png" alt="https://placehold.co/400" />
                     </div>
                 </button>
 
                 <button className="characters-column" onClick={() => handleCharacterClick('character2')}>
                     <div className="characters-img background-gold">
-                        <img src="/public/icons/sapphire.png" alt="storytime Image 2" />
+                        <img src="/icons/Flying_bird-rafiki.png" alt="https://placehold.co/400" />
                     </div>
                 </button>
 
                 <button className="characters-column" onClick={() => handleCharacterClick('character3')}>
                     <div className="characters-img background-green">
-                        <img src="/public/icons/paprika.png" alt="storytime Image 3" />
+                        <img src="/icons/Dragon-pana.png" alt="https://placehold.co/400" />
                     </div>
                 </button>
             </div>
@@ -110,7 +110,9 @@ export default function Toneteller() {
                 <div>
 
                     <div className="storytime-input-div">
-                        <input
+                        
+                        <textarea 
+                            className="storytime-input"
                             id={`inputField_${clickedCharacter}`}
                             type="text"
                             onChange={() => setPrint(false)}
@@ -120,12 +122,18 @@ export default function Toneteller() {
                                 }
                             }}
                         />
-                        <button
-                            className="secondary-button heading-5 "
-                            onClick={() => fetchData()}
-                        >
-                            Tell the story
-                        </button>
+
+                        <div className="button-container">
+                            <img src="/icons/Logo.jpg" alt="https://placehold.co/400" />
+                            <button
+                                className="secondary-button heading-5 "
+                                onClick={() => fetchData()}
+                            >
+                                Tell the story
+                            </button>
+                        
+                        
+                        </div>
                     </div>
                 </div>
             )}
