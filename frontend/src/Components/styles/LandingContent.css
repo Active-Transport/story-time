@@ -1,24 +1,121 @@
 /*
 PADDING
 */
+* {
+    font-family: 'GloriaHallelujah';
+
+}
+
+.landing-content {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    background-color: #FFFAEE;
+
+}
+
+.primary-button {
+    background-color: #F8AD9D;
+    color: #000000;
+    border: 1px solid black;
+    width: 180px;
+}
+
+.heading-4 {
+    background-color: #F8AD9D;
+    font-family: 'GloriaHallelujah';
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .storytime-text {
     text-align: left;
-    background-color: var(--light-coral);
+    background-color: #FFFAEE;
     padding: 20px;
     padding-bottom: 40px;
-    height: calc(100vh - 40px);
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    color: #FFFFFF;
+    font-family: 'Epilogue';
+    color: var(--light-coral);
+    font-size: 0.5rem;
+}
+
+.storytime-text>p {
+    margin: auto;
+    width: 650px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
 }
 
 .storytime-button {
-    text-align: left;
-    background-color: var(--light-coral);
+    background-color: #F8AD9D;
     padding-top: 70px;
     justify-content: flex-end;
     flex-direction: column;
-    color: #FFFFFF;
+    color: #000000;
+}
+
+.new-tale-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.storytext-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 0.5rem;
+}
+
+.storytext-button {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    column-gap: 2rem;
+    padding: 1rem;
+}
+
+.profile-pics-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    column-gap: 1rem;
+
+}
+
+.profile-pics-container>h3 {
+    width: 220px;
+    font-size: 20px;
+    text-wrap: none;
+}
+
+.profile-pics>div>img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+
+}
+
+.profile-pics {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.profile-pics>div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

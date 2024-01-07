@@ -35,12 +35,12 @@ function NavHeader() {
                     }
                 >
                     <div className="navigation-title" >
-                        <h1>STORY TIME!</h1>
+                        <Link to="/" className="heading-4">
+                            <h1>Story Time!</h1>
+                        </Link>
                     </div>
                     <div className="navigation-right-column">
-                        <div className="navigation-links">
-                            {button && <Button />}
-                        </div>
+
                         <div
                             onClick={handleClick}
                             className={click ? "navigation-close" : "navigation-menu"}
@@ -49,14 +49,10 @@ function NavHeader() {
                 </div>
                 <div className={click ? "navigation-mobile" : "display-none"}>
                     <div className="navigation-mobile-links">
-                        <Link to="/" className="heading-4" onClick={closeMobileMenu}>
-                            Home
-                        </Link>
-
                         <a
                             className="heading-4"
                             target="_blank"
-                            href=""
+                            href="https://devpost.com/software/story-time-0c51ub"
                         >
                             Devpost
                         </a>
@@ -71,7 +67,7 @@ function NavHeader() {
                     </div>
 
                     <div className="navigation-mobile-information">
-                        <div className="body-text">
+                        <div className="body-title">
                             Created by Active Transport
                         </div>
 

@@ -79,7 +79,6 @@ p {
 .heading-2 {
   font-family: Abyss;
   font-size: 3.125rem;
-  /* 60px */
   line-height: 1;
   margin-bottom: 30px;
 }
@@ -87,7 +86,7 @@ p {
 .heading-3 {
   font-family: "Epilogue";
   font-size: 2rem;
-  /* 48px */
+
   line-height: 1;
   font-weight: 700;
   color: var(--coral-pink);
@@ -96,37 +95,30 @@ p {
 .heading-4 {
   font-family: "Handjet";
   font-size: 2.25rem;
-  /* 36px */
+
   line-height: 2.5rem;
-  /* 40px */
+
 }
 
 .heading-5 {
   font-family: 'GloriaHallelujah';
   font-weight: 700;
   margin-bottom: 20px;
-  font-size: 1.5rem;
-  /* 24px */
   line-height: 2rem;
-  /* 32px */
+
 }
 
 .heading-6 {
-  font-family: 'Cantarell';
-  font-weight: 700;
-  font-size: 1.25rem;
-  /* 20px */
-  line-height: 1.75rem;
-  /* 28px */
-  margin-bottom: 10px;
+  font-family: 'GloriaHallelujah';
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .heading-7 {
-  font-family: 'Cantarell';
-  font-size: 1.25rem;
-  /* 20px */
-  line-height: 1.75rem;
-  /* 28px */
+  font-family: 'GloriaHallelujah';
+  font-size: 2.0rem;
+  line-height: 2.5rem;
+  color: var(--melon)
 }
 
 .body-text {
@@ -136,30 +128,29 @@ p {
   color: var(--light-coral);
   font-weight: 500;
   font-style: italic;
+  display: flex;
+  justify-content: center;
 }
 
 .body-title {
-  font-family: 'Cantarell';
-  font-size: 1rem;
+  font-family: 'Epilogue';
+  font-size: 0.75rem;
   line-height: 1.125rem;
-  font-weight: 700;
+  font-weight: 500;
+  color: var(#ffffff)
 }
 
 .caption-text {
-  font-family: 'Cantarell';
-  font-size: 0.875rem;
-  /* 14px */
+  font-family: 'Epilogue';
+  font-size: 0.65rem;
   line-height: 1.25rem;
-  /* 20px */
 }
 
 .overline-text {
   font-family: 'Cantarell';
   font-weight: 700;
   font-size: 0.875rem;
-  /* 12px */
   line-height: 1rem;
-  /* 16px */
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -168,16 +159,24 @@ p {
 
 .primary-button {
   padding: 12px 20px;
-  background-color: var(--#ffffff);
+  background-color: #ffffff;
   color: var(--light-coral);
-  border: none;
   border-radius: 20px;
+  border: none;
 }
 
+.secondary-button {
+  padding: 12px 20px;
+  background-color: var(--melon);
+  color: var(#000000);
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+
+}
 
 .button-sm {
   padding: 8px 12px !important;
-  box-shadow: 4px 4px 0px #000000;
 }
 
 .background-white {
@@ -242,7 +241,6 @@ p {
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Canterella', sans-serif;
