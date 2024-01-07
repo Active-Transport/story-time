@@ -33,7 +33,6 @@ let tones = {
     neutral: "neutral 😑"
 };
 
-// display header and textbox when routed to the landing page
 export default function Toneteller() {
     const [tone, setTone] = useState(null);
     const [print, setPrint] = useState(false);
@@ -44,19 +43,19 @@ export default function Toneteller() {
     };
 
     const fetchData = () => {
-        console.log("weee woo", document.getElementById("inputField").value);
+        const inputFieldId = `inputField_${clickedCharacter}`;
+        console.log("weee woo", document.getElementById(inputFieldId).value);
         setPrint(true);
+
         fetch("https://tone-teller-ezen7qibyq-nn.a.run.app/tonetelling", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             mode: "cors",
             body: JSON.stringify({
-                input: document.getElementById("inputField").value
+                input: document.getElementById(inputFieldId).value
             })
         })
-            .then((res) => {
-                return res.json();
-            })
+            .then((res) => res.json())
             .then((data) => {
                 data = data[0];
                 setTone(tones[data[0]["label"]]);
@@ -112,12 +111,12 @@ export default function Toneteller() {
                     <div className="enter-prompt-input-text body-title">Enter a prompt</div>
                     <div className="toneteller-input-div">
                         <input
-                            id="inputField"
+                            id={`inputField_${clickedCharacter}`}
                             type="text"
-                            onChange={() => { setPrint(false) }}
+                            onChange={() => setPrint(false)}
                             onKeyUp={(e) => {
                                 if (e.key === 'Enter') {
-                                    fetchData()
+                                    fetchData();
                                 }
                             }}
                         />
@@ -125,12 +124,11 @@ export default function Toneteller() {
                             className="primary-button button-sm body-title"
                             onClick={() => fetchData()}
                         >
-                            Analyze
+                            Tell the story
                         </button>
                     </div>
                 </div>
             )}
-
         </div>
     );
 }
