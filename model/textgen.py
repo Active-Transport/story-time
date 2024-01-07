@@ -17,8 +17,8 @@ prompt_input = "baby Yoda"
 import replicate
 
 # Prompts
-pre_prompt = "Tell a dark and gruesome story about"
-prompt_input = "baby Yoda"
+pre_prompt = "Tell a happy and funny story about"
+prompt_input = "Mickey Mouse"
 
 # Generate LLM response
 output = replicate.run('a16z-infra/llama13b-v2-chat:df7690f1994d94e96ad9d568eac121aecf50684a0b0963b25a41cc40061269e5', # LLM model
@@ -34,9 +34,13 @@ for item in output:
 # print("\n")
 # Splitting the response into paragraphs based on the spaces and selecting the three entries biggest size
 paragraphs = full_response.split("\n")
+original_paragraphs = paragraphs.copy()
 paragraphs.sort(key=len, reverse=True)
+new_paragraphs = paragraphs[:3]
+# sort the paragraphs by their original order before sorting by length
+new_paragraphs.sort(key=original_paragraphs.index)
 
 # Print the paragraphs
-print("Paragraph 1: ", paragraphs[0])
-print("Paragraph 2: ", paragraphs[1])
-print("Paragraph 3: ", paragraphs[2])
+for paragraph in new_paragraphs:
+  print("Paragraph", paragraph)
+  print("\n")
